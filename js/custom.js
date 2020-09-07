@@ -47,10 +47,9 @@
 		});
 	}
 	//video carousel
-	if ($(".related_post_carousel").length > 0){
-		$(".related_post_carousel").owlCarousel({
-			singleItem:true,
-			items:4,
+	if ($(".client_slider").length > 0){
+		$(".client_slider").owlCarousel({
+			items:5,
 			loop:true,
 			margin:10,
 			autoplay:false,
@@ -65,15 +64,18 @@
 				0 : {
 					items: 1
 				},
-				768 : {
+				480 : {
 					items: 2
 				},
-				992 : {
+				768 : {
 					items: 3
 				},
-				1199 : {
+				992 : {
 					items: 4
 				},
+				1199 : {
+					items: 5
+				}
 			}
 		});
 	}

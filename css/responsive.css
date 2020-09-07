@@ -312,6 +312,10 @@
 		font-size: 29px;
 	}
 	/* slider caption css */
+	.tools_figure .tools_info h4 {
+		font-size: 16px;
+		line-height: 23px;
+	}
 }
 @media(max-width:600px){
 	.comment_list ul ul.children {
@@ -372,6 +376,26 @@
 	.widget_title {
 		margin-bottom: 17px;
 		font-size: 17px;
+	}
+	/* Tools css */
+	.tools_figure .tools_info {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+	}
+	.tools_figure .tools_info h4 {
+		font-size: 15px;
+		line-height: 20px;
+	}
+	/* Tools css */
+}
+@media(max-width:370px){
+	.tools_column{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
 	}
 }
 @media(max-width:340px){
