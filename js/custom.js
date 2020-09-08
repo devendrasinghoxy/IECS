@@ -52,7 +52,7 @@
 			items:5,
 			loop:true,
 			margin:10,
-			autoplay:false,
+			autoplay:true,
 			autoplayTimeout:3000,
 			autoplaySpeed:1500,
 			smartSpeed:1500,
