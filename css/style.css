@@ -828,7 +828,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .check_list {
     margin: 0;
-    padding-left: 0;
+    padding-left: 5px !important;
     list-style: none;
 }
 .check_list > li {
@@ -919,7 +919,8 @@ button:focus, input:focus, select:focus, textarea:focus{
     background: #111111;
     text-align: center;
     min-height: 205px;
-	cursor:pointer;
+    cursor: pointer;
+    text-decoration: none;
 }
 .adt_service_box .heading {
     font-size: 18px;
@@ -936,6 +937,9 @@ button:focus, input:focus, select:focus, textarea:focus{
 .adt_service_box .read_m_lnk {
     color: #ffffff;
     font-weight: 400;
+}
+.adt_service_box:hover {
+    text-decoration:none;
 }
 .adt_service_box:hover .read_m_lnk {
     color: #70c004;
@@ -985,7 +989,6 @@ button:focus, input:focus, select:focus, textarea:focus{
     content: "/";
     left: -4px;
     position: absolute;
-    z-index: 11;
 }
 .breadcrumb_wrapper .breadcrumb > li > a{
 	color:#ffffff;
@@ -2121,10 +2124,10 @@ button:focus, input:focus, select:focus, textarea:focus{
 .footer_logo img {
     max-width: 110px;
 }
-.footer_widget .text p {
+.footer_widget p {
     font-size: 15px;
     line-height: 24px;
-    color: #999999;
+    color: #bdbcbc;
 }
 .footer_widget h5 {
     color: #fff;
@@ -2143,7 +2146,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     margin-bottom: 7px;
 }
 .footer_menu ul li a {
-    color: #999999;
+    color: #bdbcbc;
     font-weight: 400;
     text-transform: capitalize;
     padding: 0;
@@ -2213,5 +2216,46 @@ button:focus, input:focus, select:focus, textarea:focus{
     background: transparent;
     color: #ffffff;
     border-color: #999999;
+}
+
+.ftr_address_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.ftr_address_list > li {
+    margin-bottom: 17px;
+    font-size: 14px;
+    color: #414141;
+    font-weight: 500;
+	display:inline-block;
+	width:100%;
+}
+.ftr_address_list > li:last-child{
+	margin-bottom:0;
+}
+.ftr_address_list > li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.ftr_address_list > li a:hover{
+	color: #70c004;
+}
+.ftr_address_list > li .ad_icon {
+    float: left;
+    width: 20px;
+}
+.ftr_address_list > li i {
+    color: #70c004;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 0;
+}
+.ftr_address_list > li div {
+    padding-left: 26px;
+}
+.ftr_address_list > li div p {
+    margin-bottom: 0;
+    font-size: 14px;
 }
 /*==== Footer css End ====*/
