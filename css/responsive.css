@@ -275,6 +275,18 @@
 	.service_contents .heading {
 		margin-top: 30px;
 	}
+	/* slider css */
+	.slider_caption_text h3 {
+		margin-bottom: 14px;
+	}
+	.slider_caption_text p {
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.home_slider .slider_btn {
+		margin-top: 20px;
+	}
+	/* slider css */
 }
 @media(max-width:767px){
 	.width_50{
@@ -322,14 +334,22 @@
 		width: 320px;
 	}
 	/* slider caption css */
-	.slide_item {
-		height: auto;
-	}
 	.slider_caption_text {
-		padding: 80px 10px;
+		padding: 20px 10px;
 	}
 	.slider_caption_text h3 {
-		font-size: 29px;
+		font-size: 25px;
+	}
+	.slider_caption_text p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.home_slider .slider_btn {
+		margin-top: 20px;
+		font-size: 14px;
+		padding: 0px 23px;
+		height: 35px;
+		line-height: 35px;
 	}
 	/* slider caption css */
 	.tools_figure .tools_info h4 {
@@ -365,6 +385,18 @@
 		height: 200px;
 	}
 	/* timeline css End */
+	.audited_sector_box .icon_box_wrap {
+		width: 45px;
+	}
+	.audited_sector_box .icon_box {
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+	}
+	.audited_sector_box .contentss {
+		padding-left: 55px;
+	}
 }
 @media(max-width:600px){
 	.comment_list ul ul.children {
