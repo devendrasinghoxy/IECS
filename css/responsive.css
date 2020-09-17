@@ -1,4 +1,12 @@
 
+@media(max-width:1199px){
+	.team_column {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+		width: 25%;
+	}
+}
 @media(min-width:992px){
 	.caret_down {
 		position: absolute;
@@ -200,18 +208,67 @@
 		display: block;
 	}
 	.navigation_menu > ul > li > ul:after{display:none;}
-	.navigation_menu > ul > li > ul > li:hover {
-		background-color: transparent;
+	.navigation_menu > ul > li > ul > li:hover{
+		background:transparent;
 	}
-	.navigation_menu > ul > li > ul > li:hover> a {
+	.navigation_menu > ul > li > ul > li:hover > a {
 		color: #000;
 	}
 	/*== submenu css End ==*/
+	/*== submenu second level css start ==*/
+	.navigation_menu > ul > li > ul > li > ul {
+		position: static;
+		top: 100%;
+		left: 0;
+		right:auto;
+		background-color: transparent;
+		display:none;
+		width: auto;
+		min-width: auto;
+		box-shadow: none;
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		visibility: visible;
+		opacity: 1;
+		transition: none;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-ms-transition: none;
+	}
+	.navigation_menu > ul > li > ul > li:hover > ul {
+		display:none;
+	}
+	.navigation_menu > ul > li > ul > li > ul > li {
+		border-bottom: none;
+		padding: 0;
+	}
+	.navigation_menu > ul > li > ul > li > ul > li > a {
+		padding: 7px 0px 7px 18px;
+		display: block;
+	}
+	.navigation_menu > ul > li > ul > li > ul > li:hover {
+		background-color: transparent;
+	}
+	.navigation_menu > ul > li > ul > li > ul > li:hover > a {
+		color: #000;
+	}
+	/*== submenu second level css End ==*/
 	/*== footer css start ==*/
 	.copyright_footer{
 		text-align:center;
 	}
 	/*== footer css End ==*/
+	/*== Team css Start ==*/
+	.team_column {
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+		width: 33.333333%;
+	}
+	/*== Team css End ==*/
 }
 @media(min-width:992px){
 	.blog_filter_btn {
@@ -397,6 +454,14 @@
 	.audited_sector_box .contentss {
 		padding-left: 55px;
 	}
+	/*== Team css Start ==*/
+	.team_column {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+		width: 50%;
+	}
+	/*== Team css End ==*/
 }
 @media(max-width:600px){
 	.comment_list ul ul.children {
@@ -470,6 +535,14 @@
 		line-height: 20px;
 	}
 	/* Tools css */
+	/*== Team css Start ==*/
+	.team_column {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+	}
+	/*== Team css End ==*/
 }
 @media(max-width:370px){
 	.tools_column{
