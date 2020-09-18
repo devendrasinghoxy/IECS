@@ -13,6 +13,9 @@
 		right: 1px;
 		top: 23px;
 	}
+	.sub_menu .caret_down {
+		display: none;
+	}
 	.caret_down:before {
 		font-family: 'Font Awesome 5 Free';
 		font-weight: 900;
@@ -550,6 +553,13 @@
 		flex: 0 0 100%;
 		max-width: 100%;
 		width: 100%;
+	}
+	.srvc_gallery_col {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
 	}
 }
 @media(max-width:340px){
