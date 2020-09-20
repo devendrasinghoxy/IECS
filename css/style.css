@@ -83,6 +83,10 @@ p {
 	padding-top:50px;
 	padding-bottom:50px;
 }
+.pad_top_bottom_40{
+	padding-top:40px;
+	padding-bottom:40px;
+}
 /*=== Padding css End ===*/
 /*=== common css start ===*/
 b, strong {
@@ -1120,8 +1124,8 @@ button:focus, input:focus, select:focus, textarea:focus{
     font-size: 15px;
 }
 .timelines_row .image_box img {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -1282,48 +1286,68 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 /*==== Team css End ====*/
 /*==== Team Description css start ====*/
-.modal-header {
-    padding: 11px 14px;
-    border-bottom: 1px solid #e5e5e5;
-    background: #70c004;
-    position: relative;
+.team_profile_wrap{
+	display: inline-block;
+	width: 100%;
 }
-.modal-header .modal-title {
+.team_profile_wrap .profile_img{
+	float:left;
+	width:150px;
+}
+.team_profile_wrap .profile_img img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #70c004;
+}
+.team_profile_wrap .profile_desc{
+	padding-left:180px;
+}
+.team_profile_wrap .profile_desc .heading {
+    font-size: 26px;
+    font-weight: 600;
+	text-transform:capitalize;
+}
+.team_profile_wrap .profile_desc .subheading {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 17px;
+	text-transform:capitalize;
+}
+.profile_desc .certified_dv span {
     display: inline-block;
     color: #fff;
-    font-size: 17px;
+    background: #70c004;
+    padding: 5px 13px;
+    font-size: 14px;
+    border-radius: 2em;
 }
-.modal-header .close {
-    margin-top: 0;
-    opacity: 1;
-    text-shadow: none;
-    filter: opacity(1);
-    color: #fff;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    right: 5px;
-    top: 10px;
+.profile_desc .certified_dv {
+    margin-bottom: 16px;
 }
-.team_descriptions .headings {
-    color: #000;
-    margin-top: 0;
-    margin-bottom: 13px;
-}
-.team_descriptions .text_row {
+.profile_desc .address_row {
     color: #333;
     font-weight: 500;
     display: inline-block;
     width: 100%;
     margin-bottom: 6px;
 }
-.team_descriptions .text_row > span {
+.profile_desc .address_row > .icon {
     color: #70c004;
 	float:left;
 	width:20px;
 }
-.team_descriptions .text_row .texts {
+.profile_desc .address_row .texts {
     padding-left: 25px;
+}
+.profile_desc .address_row a {
+    color: #333333;
+    text-decoration: none;
+}
+.profile_desc .address_row a:hover {
+    color: #70c004;
+    text-decoration: none;
 }
 .team_descriptions h5 {
     font-size: 17px;
@@ -1331,11 +1355,166 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: #70c004;
 }
 .team_descriptions p {
-    line-height: 24px;
     margin-bottom: 0;
-    font-size: 15px;
+}
+.team_descriptions .check_list > li {
+    margin-bottom: 8px;
+    color: #2a2b2b;
+}
+.team_titles {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.team_titles i {
+    display: inline-block;
+    background: #70c004;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.team_titles h4 {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.team_desc_table table tr td {
+    padding: 6px 8px;
 }
 /*==== Team Description css End ====*/
+/*==== Team career timeline css start ====*/
+.career_timeline_wrapper .timelines_row:nth-child(odd) .tm_content_colm {
+    padding: 20px 15px 20px 20px;
+}
+.career_timeline_wrapper .timelines_row:nth-child(even) .tm_content_colm {
+    padding: 20px 20px 20px 15px;
+}
+.timelines_row .icons {
+    display: inline-block;
+	position:relative;
+    background: #70c004;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 400;
+}
+.timelines_row .icons:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    margin-top: -10px;
+    left: 99%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #70c004;
+}
+.timelines_row:nth-child(even) .icons:after {
+    left: -9px;
+    border-left: transparent;
+    border-right: 10px solid #70c004;
+}
+/*==== Team career timeline css End ====*/
+/*==== Team skills css start ====*/
+.team_skills_section{
+	padding-top:40px;
+}
+.skill_column_row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+.skill_column {
+    text-align: center;
+    padding: 0 5px;
+    max-width: 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.skill_box {
+    margin-bottom: 40px;
+}
+.skill_box .skill_thumb {
+    font-size: 40px;
+    margin-bottom: 26px;
+    color: #70c004;
+}
+.skill_text .titles {
+    color: #2a2b2b;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.skill_text .titles .plus_i{
+	color: #2a2b2b;
+}
+.skill_text .titles h3 {
+    display: inline-block;
+    margin: 0;
+}
+.skill_box .skill_text p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+}
+/*==== Team skills css End ====*/
+/*==== Team Education css End ====*/
+.team_education_section .team_titles {
+    margin-bottom: 30px;
+}
+.team_education_col {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 3px -2px 13px rgb(0 0 0 / 11%);
+    -moz-box-shadow: 3px -2px 13px rgb(0 0 0 / 11%);
+    box-shadow: 3px -2px 13px rgb(0 0 0 / 11%);
+}
+.team_education_col .y_icons {
+    display: inline-block;
+    background: #70c004;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 21px;
+    font-weight: 500;
+}
+.team_education_col .content_box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.team_education_col .content_box p {
+    margin-bottom: 0px;
+}
+/*==== Team Education css End ====*/
+/*==== Team certification css start ====*/
+.team_certificate_section{
+	background: url("../images/bg/energy_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+/*==== Team certification css End ====*/
 /*==== Tools css start ====*/
 .tools_column {
     text-align: center;
@@ -1379,20 +1558,20 @@ button:focus, input:focus, select:focus, textarea:focus{
 /*==== Tools css End ====*/
 /*==== Gallery css Start ====*/
 .sc_gallery_section{
-	padding-top:50px;
-	padding-bottom:20px;
+	padding-top:60px;
+	padding-bottom:40px;
 }
 .gallery_popup{
 	float: left;
 	width: 100%;
 }
+.gallery_column {
+ 
+}
 .gallery_popup .gallery_item {
 	float: left;
 	width: 100%;
 	margin-bottom:30px;
-}
-.gallery_column {
-    float: left;
 }
 .gallery_item {
     position: relative;
@@ -1433,15 +1612,19 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: #fff;
     font-size: 16px;
 }
-.gallery_overlay .gallery_icon {
-    position: absolute;
+.gallery_overlay .icons_wrap{
+	position: absolute;
     top: 50%;
-    left: 50%;
-    margin-top: -18px;
-    margin-left: -18px;
+    left: 0;
+	width:100%;
+	text-align:center;
+	margin-top:-18px;
+}
+.gallery_overlay .icons {
+	display:inline-block;
     width: 36px;
     height: 36px;
-    line-height: 39px;
+    line-height: 36px;
     background-color: #fff;
     color: #70c004;
     border-radius: 50%;

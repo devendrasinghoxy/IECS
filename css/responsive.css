@@ -347,6 +347,12 @@
 		margin-top: 20px;
 	}
 	/* slider css */
+	.skill_column {
+		max-width: 33.3333%;
+		-ms-flex: 0 0 33.3333%;
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
 }
 @media(max-width:767px){
 	.width_50{
@@ -441,8 +447,8 @@
 		padding-right: 0;
 	}
 	.timelines_row .image_box img {
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 	}
 	/* timeline css End */
 	.audited_sector_box .icon_box_wrap {
@@ -465,6 +471,12 @@
 		width: 50%;
 	}
 	/*== Team css End ==*/
+	.skill_column {
+		max-width: 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
 }
 @media(max-width:600px){
 	.comment_list ul ul.children {

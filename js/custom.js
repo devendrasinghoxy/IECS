@@ -129,4 +129,38 @@
 		var img_path = $(this).attr("src");
 		$(this).parents(".slide_item").css("background-image","url("+img_path+")");
 	});
+	//popup gallery js
+	if ($(".gallery_popup").length > 0){
+		$('.gallery_popup').magnificPopup({
+			delegate: '.gallery_icon',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'my_zoom_in',
+			fixedContentPos: true,
+			fixedBgPos: true,
+			overflowY: false,
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			image: {
+				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+				titleSrc: function(item) {
+					return item.el.attr('title') + '<small></small>';
+				}
+			}
+		});
+	}
+		//counter Number
+	if($('.counter_n').length > 0){
+		$('.counter_n').appear(function() {
+			$('.counter_n').each(count);
+				function count(options) {	
+				var $this = $(this);
+				options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+				$this.countTo(options);
+			}
+		});
+	}
 })(jQuery);
