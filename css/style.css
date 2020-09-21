@@ -192,6 +192,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 	justify-content: center;
 }
 .img_box{
+	position:relative;
 	display:inline-block;
 }
 /*=== common css End ===*/
@@ -1018,6 +1019,37 @@ button:focus, input:focus, select:focus, textarea:focus{
     width: 100%;
 }
 /*==== our service page css end ====*/
+/*==== Other service css start ====*/
+.other_service_box {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.other_service_box .img_box img {
+    border-radius: 5px;
+}
+.other_service_box .overlay {
+    background: rgb(0 0 0 / 55%);
+    text-align: center;
+    opacity: 1;
+    border-radius: 5px;
+}
+.other_service_box .content_box{
+	padding:0 5px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 50%;
+	transform:translateY(-50%);
+}
+.other_service_box .content_box h4 {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+}
+/*==== Other service css end ====*/
 
 /*==== page banner css Start ====*/
 .page_banner_section {
@@ -1107,7 +1139,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     border-radius: 10px;
 }
 .timelines_row .content_box .heading {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 8px;
@@ -1542,7 +1574,6 @@ button:focus, input:focus, select:focus, textarea:focus{
     bottom: 10px;
     background: rgb(0 0 0 / 35%);
     padding: 10px;
-    border: 1px solid #ccc;
 }
 .tools_info .tools_texts {
     width: 100%;
@@ -2302,6 +2333,9 @@ button:focus, input:focus, select:focus, textarea:focus{
     float: left;
     width: 100%;
     position: relative;
+}
+.contact_address .inner_headings {
+    margin-bottom: 14px;
 }
 .address_list {
     padding: 0;

@@ -318,7 +318,7 @@
 	}
 	/* Timeline css */
 	.timelines_row .content_box .heading {
-		font-size: 23px;
+		font-size: 20px;
 		margin-bottom: 8px;
 	}
 	.timelines_row .content_box p {
@@ -450,6 +450,21 @@
 		width: 150px;
 		height: 150px;
 	}
+	.timelines_row .icons:after {
+		top: 100%;
+		margin-top: -1px;
+		left: 50%;
+		margin-left: -10px;
+		border-top: 10px solid #70c004;
+		border-right: 10px solid transparent;
+		border-left: 10px solid transparent;
+	}
+	.timelines_row:nth-child(even) .icons:after {
+		left: 50%;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		margin-left: -10px;
+	}
 	/* timeline css End */
 	.audited_sector_box .icon_box_wrap {
 		width: 45px;
@@ -477,6 +492,17 @@
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
+	.team_profile_wrap .profile_img {
+		float: left;
+		width: 120px;
+	}
+	.team_profile_wrap .profile_img img {
+		width: 120px;
+		height: 120px;
+	}
+	.team_profile_wrap .profile_desc {
+		padding-left: 140px;
+	}
 }
 @media(max-width:600px){
 	.comment_list ul ul.children {
@@ -489,6 +515,12 @@
 	.right_avtar_details {
 		padding-left: 0;
 		padding-top: 18px;
+	}
+}
+@media(max-width:500px){
+	.other_service_box .content_box h4 {
+		font-size: 15px;
+		line-height: 21px;
 	}
 }
 @media(max-width:480px){
@@ -558,6 +590,12 @@
 		width: 100%;
 	}
 	/*== Team css End ==*/
+	.team_profile_wrap .profile_desc {
+		padding-left: 0;
+		display: inline-block;
+		width: 100%;
+		padding-top: 20px;
+	}
 }
 @media(max-width:370px){
 	.tools_column{
@@ -572,6 +610,14 @@
 		max-width: 100%;
 		width: 100%;
 		text-align: center;
+	}
+}
+@media(max-width:360px){
+	.o_service_colm{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
 	}
 }
 @media(max-width:340px){
