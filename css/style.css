@@ -171,6 +171,9 @@ button:focus, input:focus, select:focus, textarea:focus{
     -ms-box-shadow: 8px 15px 40px rgba(0, 0, 0, 0.15);
     -o-box-shadow: 8px 15px 40px rgba(0, 0, 0, 0.15);
 }
+.width_25{
+	width:25%;
+}
 .width_50{
 	width:50%;
 }
@@ -1417,9 +1420,10 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .team_titles h4 {
     display: inline-block;
-	vertical-align: middle;
+    vertical-align: middle;
     margin-bottom: 0;
     font-size: 28px;
+    font-weight: 600;
 }
 .team_desc_table table tr td {
     padding: 6px 8px;
@@ -1587,13 +1591,13 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .time_content_box {
     float: left;
-    width: 25%;
+    width: 33.33%;
     padding: 0 10px;
     position: absolute;
     top: 0;
     min-height: 145px;
     border-left: 2px solid #70c004;
-    left: 2%;
+    left: 1%;
     padding-top: 10px;
 }
 .time_content_box:before {
@@ -1619,13 +1623,13 @@ button:focus, input:focus, select:focus, textarea:focus{
     left: 10%;
 }
 .time_content_box.three {
-    left: 34%;
+    left: 33.33%;
 }
 .time_content_box.four {
     left: 45%;
 }
 .time_content_box.five {
-    left: 65%;
+    left: 66.6%;
 }
 .time_content_box.six {
     left: 70%;
@@ -1646,6 +1650,69 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: #000;
 }
 /*==== horizontal timeline css End ====*/
+/*==== ankit team detail css start ====*/
+.ankit_kachhawa_desc .check_list li {
+    float: left;
+    width: 33.33%;
+    padding: 0 22px;
+    color: #2a2b2b;
+}
+/*==== ankit team detail css End ====*/
+/*==== ankit work css End ====*/
+.ankit_work_section .section_heading {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.ankit_work_section .section_heading .heading {
+    font-size: 24px;
+}
+.ankit_work_exp_row .year_dv h3 {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 7px 5px;
+    background: transparent;
+    color: #70c004;
+    border: 1px solid #70c004;
+    border-radius: 2em;
+}
+.ankit_work_exp_row {
+    margin-bottom: 20px;
+}
+.ankit_work_exp_row .contents h3 {
+    font-size: 18px;
+}
+.ankit_work_exp_row .contents h4 {
+    font-size: 17px;
+    color: #777;
+    margin-bottom: 15px;
+}
+/*==== ankit work css End ====*/
+/*==== ankit skills css start ====*/
+.sc_wrapper.ankit_academic_skills .section_heading {
+    margin-bottom: 25px;
+}
+.academic_skills_box {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.academic_skills_box h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.academic_skills_box .check_list > li {
+    font-size: 17px;
+    color: #2a2b2b;
+}
+.academic_skills_box .check_list > li span {
+    font-size: 15px;
+    color: #777777;
+	font-style:italic;
+}
+/*==== ankit skills css End ====*/
 /*==== Tools css start ====*/
 .tools_column {
     text-align: center;
