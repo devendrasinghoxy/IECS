@@ -46,7 +46,7 @@
 			navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 		});
 	}
-	//video carousel
+	//Client carousel
 	if ($(".client_slider").length > 0){
 		$(".client_slider").owlCarousel({
 			items:5,
@@ -75,6 +75,33 @@
 				},
 				1199 : {
 					items: 5
+				}
+			}
+		});
+	}
+	//Gallery carousel
+	if ($(".gallery_slider").length > 0){
+		$(".gallery_slider").owlCarousel({
+			items:2,
+			loop:true,
+			margin:10,
+			autoplay:true,
+			autoplayTimeout:5000,
+			autoplaySpeed:2000,
+			smartSpeed:1500,
+			dots:false,
+			nav:true,
+			navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+			responsiveClass: true,
+			responsive : {
+				0 : {
+					items: 1
+				},
+				600 : {
+					items: 2
+				},
+				1199 : {
+					items: 2
 				}
 			}
 		});
@@ -152,7 +179,7 @@
 			}
 		});
 	}
-		//counter Number
+	//counter Number
 	if($('.counter_n').length > 0){
 		$('.counter_n').appear(function() {
 			$('.counter_n').each(count);

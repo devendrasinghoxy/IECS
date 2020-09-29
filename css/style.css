@@ -806,35 +806,6 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: #ffffff;
 }
 /*==== home service css End ====*/
-/*==== service page css start ====*/
-.service_contents{
-	
-}
-.service_contents .heading {
-    font-size: 30px;
-    margin-bottom: 15px;
-    margin-top: 0;
-    text-transform: capitalize;
-    font-weight: 600;
-    margin-top: 20px;
-}
-.service_contents p {
-    margin-bottom: 10px;
-    font-size: 15px;
-    line-height: 25px;
-}
-.service_contents ul {
-    margin-bottom: 10px;
-    padding-left: 24px;
-}
-.service_contents ul li {
-    color: #2a2b2b;
-    margin-bottom: 5px;
-}
-.srvc_gallery_img {
-    margin-top: 20px;
-}
-/*==== service page css End ====*/
 /*==== Energy Saving css Start ====*/
 .energy_saving_section{
 	background: url("../images/bg/energy_bg.jpg") no-repeat;
@@ -1839,6 +1810,12 @@ button:focus, input:focus, select:focus, textarea:focus{
     -o-transform: scale(1);
 }
 /*==== Gallery css End ====*/
+/*==== Gallery slider css start ====*/
+.gallery_items{
+	display:inline-block;
+	width:100%;
+}
+/*==== Gallery slider css End ====*/
 /*====== magnific popup gallery css =========*/
 .mfp-content {
     margin: 0 auto;
