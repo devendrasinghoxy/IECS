@@ -1727,7 +1727,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 /*==== Gallery css Start ====*/
 .sc_gallery_section{
 	padding-top:60px;
-	padding-bottom:40px;
+	padding-bottom:60px;
 }
 .gallery_popup{
 	float: left;
